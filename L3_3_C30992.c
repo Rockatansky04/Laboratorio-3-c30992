@@ -28,7 +28,6 @@ int EncontrarDiagonalMasLarga(int Matriz[TAMANO][TAMANO]) {
         }
     }
 
-    printf("Diagonal con más 1s (Suma = %d): ", SumaMaxima);
     for (int i = 0; i < TAMANO; i++) {
         for (int j = 0; j < TAMANO; j++) {
             if (i + j == DiagonalMasUNos) {    
