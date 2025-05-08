@@ -19,23 +19,12 @@ int EncontrarDiagonalMasLarga(int Matriz[TAMANO][TAMANO]) {
     }
 
     int SumaMaxima = Diagonales[0];
-    int DiagonalMasUNos = 0;  
 
     for (int i = 1; i < NumDiag; i++) {
         if (Diagonales[i] > SumaMaxima) {
             SumaMaxima = Diagonales[i];
-            DiagonalMasUNos = i;
         }
     }
-
-    for (int i = 0; i < TAMANO; i++) {
-        for (int j = 0; j < TAMANO; j++) {
-            if (i + j == DiagonalMasUNos) {    
-                printf("%d ", Matriz[i][j]);
-            }
-        }
-    }
-    printf("\n");
 
     return SumaMaxima;
 }
